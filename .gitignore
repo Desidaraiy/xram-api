@@ -1,0 +1,23 @@
+# Global ignores
+.DS_Store
+Thumbs.db
+*.log
+*.local
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Node/Express specific ignores
+node_modules/
+dist/
+
+# OS and editor specific ignores
+.vscode/
+.idea/
+*.swp
+*.swo
+*.swn
+*.bak
+*.tmp
+~*

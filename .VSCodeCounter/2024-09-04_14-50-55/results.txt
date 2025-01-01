@@ -1,0 +1,145 @@
+Date : 2024-09-04 14:50:55
+Directory : /Users/admin/work/xram-api
+Total : 93 files,  13294 codes, 84 comments, 350 blanks, all 13728 lines
+
+Languages
++--------------------+------------+------------+------------+------------+------------+
+| language           | files      | code       | comment    | blank      | total      |
++--------------------+------------+------------+------------+------------+------------+
+| JSON               |          3 |      9,332 |          0 |          3 |      9,335 |
+| TypeScript         |         49 |      2,277 |         81 |        308 |      2,666 |
+| JavaScript         |         39 |      1,665 |          3 |         39 |      1,707 |
+| JSON with Comments |          1 |         12 |          0 |          0 |         12 |
+| Properties         |          1 |          8 |          0 |          0 |          8 |
++--------------------+------------+------------+------------+------------+------------+
+
+Directories
++------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                   | files      | code       | comment    | blank      | total      |
++------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                      |         93 |     13,294 |         84 |        350 |     13,728 |
+| . (Files)                                                              |          7 |      9,370 |          0 |          5 |      9,375 |
+| dist                                                                   |         37 |      1,647 |          3 |         37 |      1,687 |
+| dist (Files)                                                           |          2 |         32 |          0 |          2 |         34 |
+| dist/config                                                            |          1 |         15 |          0 |          1 |         16 |
+| dist/controllers                                                       |          6 |        350 |          0 |          6 |        356 |
+| dist/interfaces                                                        |          1 |          2 |          0 |          1 |          3 |
+| dist/middleware                                                        |          3 |         74 |          0 |          3 |         77 |
+| dist/models                                                            |          5 |        247 |          0 |          5 |        252 |
+| dist/repositories                                                      |          5 |        240 |          0 |          5 |        245 |
+| dist/routes                                                            |          5 |        160 |          0 |          5 |        165 |
+| dist/services                                                          |          5 |        259 |          3 |          5 |        267 |
+| dist/utils                                                             |          4 |        268 |          0 |          4 |        272 |
+| src                                                                    |         49 |      2,277 |         81 |        308 |      2,666 |
+| src (Files)                                                            |          2 |         23 |          0 |         10 |         33 |
+| src/config                                                             |          1 |         15 |          0 |          4 |         19 |
+| src/controllers                                                        |          7 |        341 |         33 |         45 |        419 |
+| src/interfaces                                                         |          1 |          7 |          0 |          2 |          9 |
+| src/jobs                                                               |          4 |         48 |         10 |          9 |         67 |
+| src/middleware                                                         |          3 |         54 |          0 |          7 |         61 |
+| src/models                                                             |         11 |        635 |          1 |         76 |        712 |
+| src/repositories                                                       |          6 |        236 |          0 |         43 |        279 |
+| src/routes                                                             |          5 |        199 |          0 |         33 |        232 |
+| src/services                                                           |          6 |        425 |         37 |         55 |        517 |
+| src/utils                                                              |          3 |        294 |          0 |         24 |        318 |
++------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++------------------------------------------------------------------------+--------------------+------------+------------+------------+------------+
+| filename                                                               | language           | code       | comment    | blank      | total      |
++------------------------------------------------------------------------+--------------------+------------+------------+------------+------------+
+| /Users/admin/work/xram-api/.env                                        | Properties         |          8 |          0 |          0 |          8 |
+| /Users/admin/work/xram-api/dist/app.js                                 | JavaScript         |         17 |          0 |          1 |         18 |
+| /Users/admin/work/xram-api/dist/config/database.js                     | JavaScript         |         15 |          0 |          1 |         16 |
+| /Users/admin/work/xram-api/dist/controllers/admin.controller.js        | JavaScript         |         47 |          0 |          1 |         48 |
+| /Users/admin/work/xram-api/dist/controllers/good.controller.js         | JavaScript         |         24 |          0 |          1 |         25 |
+| /Users/admin/work/xram-api/dist/controllers/order.controller.js        | JavaScript         |         76 |          0 |          1 |         77 |
+| /Users/admin/work/xram-api/dist/controllers/schedule.controller.js     | JavaScript         |         42 |          0 |          1 |         43 |
+| /Users/admin/work/xram-api/dist/controllers/user.controller.js         | JavaScript         |        111 |          0 |          1 |        112 |
+| /Users/admin/work/xram-api/dist/controllers/yookassa.controller.js     | JavaScript         |         50 |          0 |          1 |         51 |
+| /Users/admin/work/xram-api/dist/interfaces/goodinorder.interface.js    | JavaScript         |          2 |          0 |          1 |          3 |
+| /Users/admin/work/xram-api/dist/middleware/adminAuth.middleware.js     | JavaScript         |         34 |          0 |          1 |         35 |
+| /Users/admin/work/xram-api/dist/middleware/clientAuth.middleware.js    | JavaScript         |         34 |          0 |          1 |         35 |
+| /Users/admin/work/xram-api/dist/middleware/error.middleware.js         | JavaScript         |          6 |          0 |          1 |          7 |
+| /Users/admin/work/xram-api/dist/models/admin.model.js                  | JavaScript         |         36 |          0 |          1 |         37 |
+| /Users/admin/work/xram-api/dist/models/good.model.js                   | JavaScript         |         40 |          0 |          1 |         41 |
+| /Users/admin/work/xram-api/dist/models/order.model.js                  | JavaScript         |         43 |          0 |          1 |         44 |
+| /Users/admin/work/xram-api/dist/models/schedule.model.js               | JavaScript         |         65 |          0 |          1 |         66 |
+| /Users/admin/work/xram-api/dist/models/user.model.js                   | JavaScript         |         63 |          0 |          1 |         64 |
+| /Users/admin/work/xram-api/dist/repositories/admin.repository.js       | JavaScript         |         33 |          0 |          1 |         34 |
+| /Users/admin/work/xram-api/dist/repositories/good.repository.js        | JavaScript         |         28 |          0 |          1 |         29 |
+| /Users/admin/work/xram-api/dist/repositories/order.repository.js       | JavaScript         |         48 |          0 |          1 |         49 |
+| /Users/admin/work/xram-api/dist/repositories/schedule.repository.js    | JavaScript         |         40 |          0 |          1 |         41 |
+| /Users/admin/work/xram-api/dist/repositories/user.repository.js        | JavaScript         |         91 |          0 |          1 |         92 |
+| /Users/admin/work/xram-api/dist/routes/admin.routes.js                 | JavaScript         |         46 |          0 |          1 |         47 |
+| /Users/admin/work/xram-api/dist/routes/index.js                        | JavaScript         |         21 |          0 |          1 |         22 |
+| /Users/admin/work/xram-api/dist/routes/public.routes.js                | JavaScript         |         23 |          0 |          1 |         24 |
+| /Users/admin/work/xram-api/dist/routes/user.routes.js                  | JavaScript         |         53 |          0 |          1 |         54 |
+| /Users/admin/work/xram-api/dist/routes/yookassa.routes.js              | JavaScript         |         17 |          0 |          1 |         18 |
+| /Users/admin/work/xram-api/dist/server.js                              | JavaScript         |         15 |          0 |          1 |         16 |
+| /Users/admin/work/xram-api/dist/services/admin.service.js              | JavaScript         |         44 |          0 |          1 |         45 |
+| /Users/admin/work/xram-api/dist/services/good.service.js               | JavaScript         |         23 |          0 |          1 |         24 |
+| /Users/admin/work/xram-api/dist/services/order.service.js              | JavaScript         |         52 |          3 |          1 |         56 |
+| /Users/admin/work/xram-api/dist/services/schedule.service.js           | JavaScript         |         35 |          0 |          1 |         36 |
+| /Users/admin/work/xram-api/dist/services/user.service.js               | JavaScript         |        105 |          0 |          1 |        106 |
+| /Users/admin/work/xram-api/dist/utils/email.utils.js                   | JavaScript         |        163 |          0 |          1 |        164 |
+| /Users/admin/work/xram-api/dist/utils/guid.utlis.js                    | JavaScript         |         11 |          0 |          1 |         12 |
+| /Users/admin/work/xram-api/dist/utils/hash.utils.js                    | JavaScript         |         24 |          0 |          1 |         25 |
+| /Users/admin/work/xram-api/dist/utils/yookassa.utils.js                | JavaScript         |         70 |          0 |          1 |         71 |
+| /Users/admin/work/xram-api/ecosystem.config.js                         | JavaScript         |          9 |          0 |          0 |          9 |
+| /Users/admin/work/xram-api/eslint.config.mjs                           | JavaScript         |          9 |          0 |          2 |         11 |
+| /Users/admin/work/xram-api/package-lock.json                           | JSON               |      4,636 |          0 |          1 |      4,637 |
+| /Users/admin/work/xram-api/package-lock123.json                        | JSON               |      4,642 |          0 |          1 |      4,643 |
+| /Users/admin/work/xram-api/package.json                                | JSON               |         54 |          0 |          1 |         55 |
+| /Users/admin/work/xram-api/src/app.ts                                  | TypeScript         |         13 |          0 |          6 |         19 |
+| /Users/admin/work/xram-api/src/config/database.ts                      | TypeScript         |         15 |          0 |          4 |         19 |
+| /Users/admin/work/xram-api/src/controllers/admin.controller.ts         | TypeScript         |         27 |          0 |          4 |         31 |
+| /Users/admin/work/xram-api/src/controllers/good.controller.ts          | TypeScript         |          9 |          0 |          3 |         12 |
+| /Users/admin/work/xram-api/src/controllers/order.controller.ts         | TypeScript         |         84 |          9 |         11 |        104 |
+| /Users/admin/work/xram-api/src/controllers/schedule.controller.ts      | TypeScript         |         49 |          0 |          5 |         54 |
+| /Users/admin/work/xram-api/src/controllers/subscription.controller.ts  | TypeScript         |         56 |         11 |          6 |         73 |
+| /Users/admin/work/xram-api/src/controllers/user.controller.ts          | TypeScript         |         76 |          0 |         10 |         86 |
+| /Users/admin/work/xram-api/src/controllers/yookassa.controller.ts      | TypeScript         |         40 |         13 |          6 |         59 |
+| /Users/admin/work/xram-api/src/interfaces/goodinorder.interface.ts     | TypeScript         |          7 |          0 |          2 |          9 |
+| /Users/admin/work/xram-api/src/jobs/index.ts                           | TypeScript         |         13 |          0 |          4 |         17 |
+| /Users/admin/work/xram-api/src/jobs/notification.jobs.ts               | TypeScript         |          5 |          0 |          1 |          6 |
+| /Users/admin/work/xram-api/src/jobs/subscription.jobs.ts               | TypeScript         |         25 |         10 |          3 |         38 |
+| /Users/admin/work/xram-api/src/jobs/supporter.jobs.ts                  | TypeScript         |          5 |          0 |          1 |          6 |
+| /Users/admin/work/xram-api/src/middleware/adminAuth.middleware.ts      | TypeScript         |         22 |          0 |          2 |         24 |
+| /Users/admin/work/xram-api/src/middleware/clientAuth.middleware.ts     | TypeScript         |         22 |          0 |          2 |         24 |
+| /Users/admin/work/xram-api/src/middleware/error.middleware.ts          | TypeScript         |         10 |          0 |          3 |         13 |
+| /Users/admin/work/xram-api/src/models/admin.model.ts                   | TypeScript         |         51 |          0 |          6 |         57 |
+| /Users/admin/work/xram-api/src/models/good.model.ts                    | TypeScript         |         56 |          0 |          6 |         62 |
+| /Users/admin/work/xram-api/src/models/limit.model.ts                   | TypeScript         |         47 |          0 |          7 |         54 |
+| /Users/admin/work/xram-api/src/models/order.model.ts                   | TypeScript         |         59 |          0 |          7 |         66 |
+| /Users/admin/work/xram-api/src/models/paymethod.model.ts               | TypeScript         |         45 |          0 |          6 |         51 |
+| /Users/admin/work/xram-api/src/models/plan.model.ts                    | TypeScript         |         41 |          0 |          7 |         48 |
+| /Users/admin/work/xram-api/src/models/schedule.model.ts                | TypeScript         |         94 |          0 |          7 |        101 |
+| /Users/admin/work/xram-api/src/models/service.model.ts                 | TypeScript         |         44 |          0 |          7 |         51 |
+| /Users/admin/work/xram-api/src/models/subscription.model.ts            | TypeScript         |         65 |          0 |          7 |         72 |
+| /Users/admin/work/xram-api/src/models/subscriptionLimit.model.ts       | TypeScript         |         49 |          0 |          6 |         55 |
+| /Users/admin/work/xram-api/src/models/user.model.ts                    | TypeScript         |         84 |          1 |         10 |         95 |
+| /Users/admin/work/xram-api/src/repositories/admin.repository.ts        | TypeScript         |         13 |          0 |          5 |         18 |
+| /Users/admin/work/xram-api/src/repositories/good.repository.ts         | TypeScript         |         10 |          0 |          4 |         14 |
+| /Users/admin/work/xram-api/src/repositories/order.repository.ts        | TypeScript         |         27 |          0 |          7 |         34 |
+| /Users/admin/work/xram-api/src/repositories/schedule.repository.ts     | TypeScript         |         38 |          0 |          4 |         42 |
+| /Users/admin/work/xram-api/src/repositories/subscription.repository.ts | TypeScript         |         49 |          0 |         10 |         59 |
+| /Users/admin/work/xram-api/src/repositories/user.repository.ts         | TypeScript         |         99 |          0 |         13 |        112 |
+| /Users/admin/work/xram-api/src/routes/admin.routes.ts                  | TypeScript         |         67 |          0 |          8 |         75 |
+| /Users/admin/work/xram-api/src/routes/index.ts                         | TypeScript         |         16 |          0 |          2 |         18 |
+| /Users/admin/work/xram-api/src/routes/public.routes.ts                 | TypeScript         |         18 |          0 |          5 |         23 |
+| /Users/admin/work/xram-api/src/routes/user.routes.ts                   | TypeScript         |         86 |          0 |         13 |         99 |
+| /Users/admin/work/xram-api/src/routes/yookassa.routes.ts               | TypeScript         |         12 |          0 |          5 |         17 |
+| /Users/admin/work/xram-api/src/server.ts                               | TypeScript         |         10 |          0 |          4 |         14 |
+| /Users/admin/work/xram-api/src/services/admin.service.ts               | TypeScript         |         31 |          0 |          4 |         35 |
+| /Users/admin/work/xram-api/src/services/good.service.ts                | TypeScript         |          8 |          0 |          3 |         11 |
+| /Users/admin/work/xram-api/src/services/order.service.ts               | TypeScript         |         59 |          0 |         10 |         69 |
+| /Users/admin/work/xram-api/src/services/schedule.service.ts            | TypeScript         |         55 |          0 |          5 |         60 |
+| /Users/admin/work/xram-api/src/services/subscription.service.ts        | TypeScript         |        177 |         37 |         21 |        235 |
+| /Users/admin/work/xram-api/src/services/user.service.ts                | TypeScript         |         95 |          0 |         12 |        107 |
+| /Users/admin/work/xram-api/src/utils/email.utils.ts                    | TypeScript         |        169 |          0 |         10 |        179 |
+| /Users/admin/work/xram-api/src/utils/hash.utils.ts                     | TypeScript         |         10 |          0 |          3 |         13 |
+| /Users/admin/work/xram-api/src/utils/yookassa.utils.ts                 | TypeScript         |        115 |          0 |         11 |        126 |
+| /Users/admin/work/xram-api/tsconfig.json                               | JSON with Comments |         12 |          0 |          0 |         12 |
+| Total                                                                  |                    |     13,294 |         84 |        350 |     13,728 |
++------------------------------------------------------------------------+--------------------+------------+------------+------------+------------+
