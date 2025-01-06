@@ -31,14 +31,14 @@ Schedule.init(
       allowNull: true,
     },
     body: {
-      type: new DataTypes.STRING(255),
+      type: new DataTypes.TEXT(),
       allowNull: true,
     },
   },
 
   {
     tableName: "schedule",
-    timestamps: false,
+    timestamps: true,
     sequelize,
   }
 );

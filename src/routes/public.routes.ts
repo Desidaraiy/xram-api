@@ -13,7 +13,7 @@ class PublicRoutes {
   }
 
   config(): void {
-    this.router.get("/schedules", ScheduleController.getAllSchedules);
+    this.router.get("/schedules", ScheduleController.getOne);
     this.router.get("/goods", GoodController.getAllGoods);
     this.router.post("/forgot-password", UserController.forgotPassword);
     this.router.post("/email-verification", UserController.verifyEmail);

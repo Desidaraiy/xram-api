@@ -22,10 +22,6 @@ class UserService {
     return UserRepository.findExtendedById(id);
   }
 
-  // public async updatePushId(id: number, pushId: string): Promise<void> {
-  //   await UserRepository.updatePushId(id, pushId);
-  // }
-
   public async forgotPassword(email: string): Promise<boolean> {
     let user = await UserRepository.findByEmail(email);
     if (user) {
@@ -70,7 +66,6 @@ class UserService {
       const token = jwt.sign({ id: user.id }, process.env.JWT_SECRET!, {
         expiresIn: "24h",
       });
-      // const updatedUser = await UserRepository.updateToken(user.id, token);
       const newDevice = {
         userId: user.id,
         pushId,
@@ -98,7 +93,6 @@ class UserService {
       });
       const code = uuid();
       user = await UserRepository.updateCode(user.id, code);
-      // user = await UserRepository.updateToken(user!.id, token);
       EmailService.getInstance().sendConfirmationEmail(user!);
       return user;
     }
@@ -120,7 +114,6 @@ class UserService {
           return user;
         }
       }
-      // return deviceRepository.findByToken(token);
       return null;
     } catch {
       return null;

@@ -47,9 +47,14 @@ class AdminRoutes {
       ScheduleController.updateSchedule
     );
     this.router.post(
-      "schedules/all",
+      "/schedules/new",
       adminMiddleware,
-      ScheduleController.updateAllSchedules
+      ScheduleController.createSchedule
+    );
+    this.router.post(
+      "schedules/:id",
+      adminMiddleware,
+      ScheduleController.updateSchedule
     );
 
     this.router.get(

@@ -1,5 +1,7 @@
 import { Request, Response } from "express";
 import ScheduleService from "../services/schedule.service";
+import moment from "moment";
+import Schedule from "../models/schedule.model";
 
 class ScheduleController {
   public async getAllSchedules(req: Request, res: Response): Promise<void> {
@@ -7,46 +9,32 @@ class ScheduleController {
     res.status(200).json({ state: "success", data: schedules });
   }
 
-  public async updateSchedule(req: Request, res: Response): Promise<void> {
-    const {
-      id,
-      saints,
-      time_1,
-      description_1,
-      time_2,
-      description_2,
-      time_3,
-      description_3,
-      time_4,
-      description_4,
-      time_5,
-      description_5,
-    } = req.body;
-    await ScheduleService.updateSchedule(
-      id,
-      saints,
-      time_1,
-      description_1,
-      time_2,
-      description_2,
-      time_3,
-      description_3,
-      time_4,
-      description_4,
-      time_5,
-      description_5
-    );
-    res
-      .status(200)
-      .json({ state: "success", message: "Schedule updated successfully" });
+  public async getOne(req: Request, res: Response): Promise<void> {
+    const schedule = await ScheduleService.getOneSchedule();
+    res.status(200).json({ state: "success", data: schedule });
   }
 
-  public async updateAllSchedules(req: Request, res: Response): Promise<void> {
-    await ScheduleService.updateAllSchedules(req.body);
-    res.status(200).json({
-      state: "success",
-      message: "All schedules updated successfully",
-    });
+  public async updateSchedule(req: Request, res: Response): Promise<void> {
+    const { id, body } = req.body;
+    const updated: Schedule | null = await ScheduleService.updateSchedule(
+      id,
+      JSON.stringify(body)
+    );
+    if (updated != null) {
+      res.status(200).json({ state: "success", data: updated });
+    } else {
+      res.status(200).json({ state: "error", message: "not found" });
+    }
+  }
+
+  public async createSchedule(req: Request, res: Response): Promise<void> {
+    const { date } = req.body;
+    const schedule = await ScheduleService.createSchedule(date);
+    if (schedule != null) {
+      res.status(200).json({ state: "success", data: schedule });
+    } else {
+      res.status(200).json({ state: "error", message: "Schedule exists" });
+    }
   }
 }
 

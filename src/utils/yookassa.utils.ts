@@ -45,6 +45,8 @@ class PaymentService {
           return_url: "https://vratarnitca.ru/thank-you?order=" + orderId,
         },
         description: "Оплата заказа #" + orderId,
+
+        //@ts-ignore
         metadata: {
           orderId: orderId.toString(),
         },
@@ -91,6 +93,7 @@ class PaymentService {
             return_url: "https://vratarnitca.ru/thank-you?order=" + orderId,
           },
           description: "Оплата заказа #" + orderId,
+          //@ts-ignore
           metadata: {
             orderId: orderId.toString(),
           },
@@ -121,6 +124,7 @@ class PaymentService {
         metadata: {
           orderId: orderId.toString(),
         },
+        //@ts-ignore
         confirmation: null,
       },
       uuid()

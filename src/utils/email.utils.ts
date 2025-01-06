@@ -229,12 +229,6 @@ class EmailService {
         );
       }
     }
-    // if (user.pushId !== null && user.pushId !== "") {
-    //   PushNotificationService.getInstance().sendPushNotification(
-    //     user.pushId!,
-    //     "38 дней назад вы заказали сорокоуст, вы можете продлить поминовение по ссылке: https://vratarnitca.ru/note"
-    //   );
-    // }
   }
 }
 

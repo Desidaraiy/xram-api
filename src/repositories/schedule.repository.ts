@@ -1,40 +1,62 @@
+import daySchedule from "../interfaces/daySchedule.interface";
 import Schedule from "../models/schedule.model";
 
 class ScheduleRepository {
   public async findAll(): Promise<Schedule[]> {
-    return Schedule.findAll();
+    return await Schedule.findAll();
   }
 
-  public async updateSchedule(
-    id: number,
-    saints: string,
-    time_1: string,
-    description_1: string,
-    time_2: string,
-    description_2: string,
-    time_3: string,
-    description_3: string,
-    time_4: string,
-    description_4: string,
-    time_5: string,
-    description_5: string
-  ): Promise<void> {
+  public async getOne(date: string): Promise<Schedule | null> {
+    return await Schedule.findOne({
+      where: { date },
+    });
+  }
+
+  public async getById(id: number): Promise<Schedule | null> {
+    return await Schedule.findByPk(id);
+  }
+
+  public async update(id: number, body: string): Promise<void> {
     await Schedule.update(
       {
-        saints,
-        time_1,
-        description_1,
-        time_2,
-        description_2,
-        time_3,
-        description_3,
-        time_4,
-        description_4,
-        time_5,
-        description_5,
+        body: body,
       },
       { where: { id } }
     );
+  }
+
+  public async create(date: string): Promise<Schedule> {
+    const body: daySchedule[] = [];
+
+    for (let i: number = 1; i < 32; i++) {
+      const day: daySchedule = {
+        id: i,
+        saints: "",
+        time_1: null,
+        isActive_1: false,
+        description_1: null,
+        time_2: null,
+        isActive_2: false,
+        description_2: null,
+        time_3: null,
+        isActive_3: false,
+        description_3: null,
+        time_4: null,
+        isActive_4: false,
+        description_4: null,
+        time_5: null,
+        isActive_5: false,
+        description_5: null,
+      };
+      body.push(day);
+    }
+
+    const jsonStringBody = JSON.stringify(body);
+
+    return await Schedule.create({
+      date: date,
+      body: jsonStringBody,
+    });
   }
 }
 
